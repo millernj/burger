@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A simple, MVC full stack burger app featuring Express, mySQL, Handlebars, and Heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millernj/burger.git"
+  },
+  "author": "Noah Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/millernj/burger/issues"
+  },
+  "homepage": "https://github.com/millernj/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.2",
+    "jest": "^25.2.7",
+    "mysql": "^2.18.1"
+  }
+}
