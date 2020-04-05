@@ -4,7 +4,8 @@
   "description": "A simple, MVC full stack burger app featuring Express, mySQL, Handlebars, and Heroku",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/millernj/burger#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.2",
     "jest": "^25.2.7",
