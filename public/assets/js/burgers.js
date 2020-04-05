@@ -21,13 +21,11 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
     const burger_name = $("#burger_name").val().trim();
-    const devoured = $("[name=devoured]:checked").val().trim();
     // Send the POST request.
     await $.ajax("/api/burgers/", {
       type: "POST",
       data: {
-        burger_name, 
-        devoured
+        burger_name
       }
     });
     console.log("created new burger");

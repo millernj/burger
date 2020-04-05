@@ -1,38 +1,49 @@
+<div id="burger-img-wrapper">
+  <img id="burger-img" src='https://img.freepik.com/free-vector/hamburger-illustration-with-outline_179407-40.jpg?size=338&ext=jpg' alt="a delicious burger">
+</div>
+
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not devoured!</h2>
+<div class="container">
+  <div id="burger-list-area">
+    <div>
+      <h2>Burgers that are not devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
 
-<h2>Burgers that are devoured!</h2>
+    <div>
+      <h2>Burgers that are devoured!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burger_name">Burger Name:</label>
-    <input type="text" id="burger_name" name="name">
+      <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked>Yes<br>
-    <input type="radio" name="devoured" value="0">No
-  </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+<div id="burger-form-area">
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="burger_name">Burger Name:</label>
+      <input type="text" id="burger_name" name="name">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>Enter a burger you want to eat, then click the submit button</p>
+</div>
+</div>
